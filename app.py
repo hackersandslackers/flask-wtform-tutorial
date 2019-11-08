@@ -20,7 +20,7 @@ def contact():
     return render_template('contact.html', form=form)
 
 
-@app.route('/success')
+@app.route('/success', methods=('GET', 'POST'))
 def success():
     return render_template('success.html')
 

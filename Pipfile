@@ -8,7 +8,6 @@ verify_ssl = true
 [packages]
 Flask = "*"
 Flask-WTF = "*"
-Flask-Assets = "*"
 
 [requires]
 python_version = "3.7"

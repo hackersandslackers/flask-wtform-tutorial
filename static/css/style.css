@@ -76,7 +76,8 @@ input[type="text"]::placeholder {
 }
 
 input[type="text"]:hover,
-textarea:hover {
+textarea:hover,
+select:hover {
   border-color: #5eb9d7;
   background: #d9f6ff;
 }
@@ -129,4 +130,14 @@ input[type="submit"]:hover {
     text-align: center;
     height: fit-content;
     margin: auto;
+}
+
+i {
+  position: absolute;
+  margin: auto;
+  top: 4px;
+  bottom: 0;
+  right: 16px;
+  height: fit-content;
+  color: grey;
 }

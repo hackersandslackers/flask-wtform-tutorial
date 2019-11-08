@@ -21,6 +21,7 @@
         {% endif %}
       </div>
       <div class="form-field">{{ form.title.label }} {{ form.title }}
+        <i class="fas fa-caret-down"></i>
         {% if form.title.errors %}
           <ul class="errors"> {% for error in form.title.errors %}<li>{{ error }}</li> {% endfor %} </ul>
         {% endif %}
