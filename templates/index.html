@@ -1,5 +1,9 @@
 {% extends 'layout.html' %}
 
+{% block pagestyles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
 <ul>
   <li><a href="{{ url_for('contact') }}">Contact Form</a></li>

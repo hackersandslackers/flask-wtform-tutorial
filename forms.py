@@ -17,18 +17,18 @@ class ContactForm(FlaskForm):
     name = StringField('Name', [
         DataRequired()])
     email = StringField('Email', [
-        Email(message=('Not a valid email address.')),
+        Email(message='Not a valid email address.'),
         DataRequired()])
     body = TextAreaField('Message', [
         DataRequired(),
-        Length(min=4, message=('Your message is too short.'))])
+        Length(min=4, message='Your message is too short.')])
     submit = SubmitField('Submit')
 
 
 class SignupForm(FlaskForm):
     """Sign up for a user account."""
     email = StringField('Email', [
-        Email(message=('Not a valid email address.')),
+        Email(message='Not a valid email address.'),
         DataRequired()])
     password = PasswordField('Password', [
         DataRequired(message="Please enter a password."),
