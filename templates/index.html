@@ -1,12 +1,13 @@
 {% extends 'layout.html' %}
 
-{% block pagestyles %}
+{% block styles %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block content %}
+<h1>Flask-WTF Tutorial</h1>
 <ul>
-  <li><a href="{{ url_for('contact') }}">Contact Form</a></li>
-  <li><a href="{{ url_for('signup') }}">Signup Form</a></li>
+  <li><a href="{{ url_for('contact') }}">Contact Form <i class="fas fa-chevron-right"></i></a></li>
+  <li><a href="{{ url_for('signup') }}">Signup Form <i class="fas fa-chevron-right"></i></a></li>
 </ul>
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends 'layout.html' %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
 <div class="formwrapper">
   <h2 class="title">Sign Up</h2>

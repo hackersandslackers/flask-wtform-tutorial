@@ -17,8 +17,18 @@ def home():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        return redirect(url_for('success'))
+        return redirect(url_for('success'), code=200)
     return render_template('contact.html',
+                           form=form,
+                           template='form-template')
+
+
+@app.route('/signup', methods=('GET', 'POST'))
+def signup():
+    form = SignupForm()
+    if form.validate_on_submit():
+        return redirect(url_for('success'), code=200)
+    return render_template('signup.html',
                            form=form,
                            template='form-template')
 
@@ -27,13 +37,3 @@ def contact():
 def success():
     return render_template('success.html',
                            template='success-template')
-
-
-@app.route('/signup', methods=('GET', 'POST'))
-def signup():
-    form = SignupForm()
-    if form.validate_on_submit():
-        return redirect('/success')
-    return render_template('signup.html',
-                           form=form,
-                           template='form-template')
