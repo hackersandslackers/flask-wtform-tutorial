@@ -37,12 +37,12 @@ class SignupForm(FlaskForm):
             EqualTo(password, message='Passwords must match.')
             ])
     title = SelectField('Title', [DataRequired()],
-                        choices=[('Farmer', 'Farmer'),
-                                 ('Corrupt Politician', 'Corrupt Politician'),
-                                 ('No-nonsense City Cop', 'No-nonsense City Cop'),
-                                 ('Professional Rocket League Player', 'Professional Rocket League Player'),
-                                 ('Lonely Guy At A Diner', 'Lonely Guy At A Diner'),
-                                 ('Pokemon Trainer', 'Pokemon Trainer')])
+                        choices=[('Farmer', 'farmer'),
+                                 ('Corrupt Politician', 'politician'),
+                                 ('No-nonsense City Cop', 'cop'),
+                                 ('Professional Rocket League Player', 'rocket'),
+                                 ('Lonely Guy At A Diner', 'lonely'),
+                                 ('Pokemon Trainer', 'pokemon')])
     website = StringField('Website', validators=[URL()])
     birthday = DateField('Your Birthday')
     recaptcha = RecaptchaField()
