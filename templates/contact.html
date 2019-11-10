@@ -10,17 +10,29 @@
   <form method="POST" action="/">
     <div class="form-field">{{ form.name.label }} {{ form.name(size=20) }}
       {% if form.name.errors %}
-        <ul class="errors"> {% for error in form.name.errors %}<li>{{ error }}</li> {% endfor %} </ul>
+        <ul class="errors">
+          {% for error in form.name.errors %}
+            <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
       {% endif %}
     </div>
     <div class="form-field">{{ form.email.label }} {{ form.email }}
       {% if form.email.errors %}
-        <ul class="errors"> {% for error in form.email.errors %}<li>{{ error }}</li> {% endfor %} </ul>
+        <ul class="errors">
+          {% for error in form.email.errors %}
+            <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
       {% endif %}
     </div>
     <div class="form-field">{{ form.body.label }} {{ form.body }}
       {% if form.body.errors %}
-        <ul class="errors"> {% for error in form.body.errors %}<li>{{ error }}</li> {% endfor %} </ul>
+        <ul class="errors">
+          {% for error in form.body.errors %}
+            <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
       {% endif %}
     </div>
     {{ form.submit }}
