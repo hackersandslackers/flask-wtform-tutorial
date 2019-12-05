@@ -11,3 +11,27 @@
 ![Flask-WTF Tutorial](https://res-1.cloudinary.com/hackers/image/upload/q_auto:best/v1/2019/11/flask-wtforms.jpg)
 
 Source code for the accompanying tutorial found here: https://hackersandslackers.com/guide-to-building-forms-in-flask/
+
+## Getting Started
+
+Installation is recommended with Pipenv:
+
+```shell
+$ git clone https://github.com/hackersandslackers/flask-wtform-tutorial.git
+$ cd django-intro-tutorial
+$ pipenv shell
+$ pipenv update
+$ python3 main.py
+```
+
+Alternatively, try installing via `setup.py`:
+
+```shell
+$ git clone https://github.com/hackersandslackers/flask-wtform-tutorial.git
+$ cd django-intro-tutorial
+$ python3 setup.py install
+$ python3 main.py
+```
+-----
+
+**Hackers and Slackers** tutorials are free of charge. If you found this tutorial helpful, a [small donation](https://www.buymeacoffee.com/hackersslackers) would be greatly appreciated to keep us in business. All proceeds go towards coffee, and all coffee goes towards more content.
