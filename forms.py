@@ -1,3 +1,4 @@
+"""Form class declaration."""
 from flask_wtf import FlaskForm, RecaptchaField
 from wtforms import (StringField,
                      TextAreaField,
@@ -14,6 +15,7 @@ from wtforms.validators import (DataRequired,
 
 class ContactForm(FlaskForm):
     """Contact form."""
+
     name = StringField('Name', [
         DataRequired()])
     email = StringField('Email', [
@@ -27,6 +29,7 @@ class ContactForm(FlaskForm):
 
 class SignupForm(FlaskForm):
     """Sign up for a user account."""
+
     email = StringField('Email', [
         Email(message='Not a valid email address.'),
         DataRequired()])
