@@ -1,10 +1,6 @@
-from flask import Flask, url_for, render_template, redirect
-from forms import ContactForm, SignupForm
-
-app = Flask(__name__, instance_relative_config=False)
-app.config.from_object('config.Config')
-app.config['RECAPTCHA_PUBLIC_KEY'] = 'iubhiukfgjbkhfvgkdfm'
-app.config['RECAPTCHA_PARAMETERS'] = {'size': '100%'}
+from flask import url_for, render_template, redirect
+from flask import current_app as app
+from .forms import ContactForm, SignupForm
 
 
 @app.route('/')
