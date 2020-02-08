@@ -2,6 +2,7 @@ from flask import url_for, render_template, redirect
 from flask import current_app as app
 from .forms import ContactForm, SignupForm
 
+app.secret_key = 'development key'
 
 @app.route('/')
 def home():
