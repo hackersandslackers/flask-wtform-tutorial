@@ -1,8 +1,9 @@
-Click==7.0
+click==7.1.1
 Flask==1.1.1
-Flask-WTF==0.14.2
+Flask-WTF==0.14.3
 itsdangerous==1.1.0
-Jinja2==2.10.3
+Jinja2==2.11.1
 MarkupSafe==1.1.1
-Werkzeug==0.16.0
+python-dotenv==0.12.0
+Werkzeug==1.0.0
 WTForms==2.2.1
