@@ -13,7 +13,7 @@ def home():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        return redirect(url_for('success'), code=200)
+        return redirect(url_for('success'))
     return render_template('contact.html',
                            form=form,
                            template='form-template')
@@ -23,7 +23,7 @@ def contact():
 def signup():
     form = SignupForm()
     if form.validate_on_submit():
-        return redirect(url_for('success'), code=200)
+        return redirect(url_for('success'))
     return render_template('signup.html',
                            form=form,
                            template='form-template')
