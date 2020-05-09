@@ -9,6 +9,7 @@ verify_ssl = true
 Flask = "*"
 Flask-WTF = "*"
 python-dotenv = "*"
+email_validator = "*"
 
 [requires]
 python_version = "3.7"

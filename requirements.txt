@@ -1,7 +1,10 @@
 click==7.1.2
+dnspython==1.16.0
+email-validator==1.1.0
 Flask==1.1.2
 Flask-WTF==0.14.3
 Flask-WTF-Tutorial==0.0.1
+idna==2.9
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1

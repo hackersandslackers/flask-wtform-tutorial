@@ -10,7 +10,7 @@
 
 ![Flask-WTF Tutorial](https://res-1.cloudinary.com/hackers/image/upload/q_auto:best/v1/2019/11/flask-wtforms.jpg)
 
-Source code for the accompanying tutorial found here: https://hackersandslackers.com/guide-to-building-forms-in-flask/
+Source code for the accompanying tutorial found here: https://hackersandslackers.com/flask-wtforms-forms/
 
 
 ## Installation
