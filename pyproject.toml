@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Flask Blueprint Tutorial"
+name = "flask_wtforms_tutorial"
 version = "0.1.0"
 description = "Tutorial to implement forms in your Flask app."
 authors = ["Todd Birchard <toddbirchard@gmail.com>"]
@@ -9,11 +9,13 @@ readme = "README.md"
 homepage = "https://hackersandslackers.com/flask-wtforms-forms/"
 repository = "https://github.com/hackersandslackers/flask-wtform-tutorial/"
 documentation = "https://hackersandslackers.com/flask-wtforms-forms/"
-keywords = ["Flask",
-            "Forms",
-            "Flask-WTF",
-            "MVC",
-            "Tutorial"]
+keywords = [
+    "Flask",
+    "Forms",
+    "Flask-WTF",
+    "MVC",
+    "Tutorial"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
