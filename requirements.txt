@@ -3,7 +3,7 @@ dnspython==1.16.0
 email-validator==1.1.1
 Flask==1.1.2
 Flask-WTF==0.14.3
-idna==2.9
+idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
