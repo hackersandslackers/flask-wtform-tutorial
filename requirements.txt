@@ -9,4 +9,4 @@ Jinja2==2.11.2
 MarkupSafe==1.1.1
 python-dotenv==0.13.0
 Werkzeug==1.0.1
-WTForms==2.3.1
+WTForms==2.3.3
