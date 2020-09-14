@@ -8,6 +8,7 @@
 <div class="formwrapper">
   <h2 class="title">Contact</h2>
   <form method="POST" action="/">
+    {{ form.csrf_token }}
     <div class="form-field">{{ form.name.label }} {{ form.name(size=20) }}
       {% if form.name.errors %}
         <ul class="errors">
