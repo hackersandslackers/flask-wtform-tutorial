@@ -1,8 +1,9 @@
+-i https://pypi.org/simple/
 click==7.1.2
 dnspython==2.0.0
 email-validator==1.1.1
-flask==1.1.2
 flask-wtf==0.14.3
+flask==1.1.2
 idna==2.10
 itsdangerous==1.1.0
 jinja2==2.11.2
