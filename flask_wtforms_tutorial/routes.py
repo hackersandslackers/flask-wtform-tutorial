@@ -1,35 +1,30 @@
-from flask import url_for, render_template, redirect
 from flask import current_app as app
+from flask import redirect, render_template, url_for
+
 from .forms import ContactForm, SignupForm
 
 
-@app.route('/')
+@app.route("/")
 def home():
-    return render_template('index.jinja2',
-                           template='home-template')
+    return render_template("index.jinja2", template="home-template")
 
 
-@app.route('/contact', methods=('GET', 'POST'))
+@app.route("/contact", methods=("GET", "POST"))
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        return redirect(url_for('success'))
-    return render_template('contact.jinja2',
-                           form=form,
-                           template='form-template')
+        return redirect(url_for("success"))
+    return render_template("contact.jinja2", form=form, template="form-template")
 
 
-@app.route('/signup', methods=('GET', 'POST'))
+@app.route("/signup", methods=("GET", "POST"))
 def signup():
     form = SignupForm()
     if form.validate_on_submit():
-        return redirect(url_for('success'))
-    return render_template('signup.jinja2',
-                           form=form,
-                           template='form-template')
+        return redirect(url_for("success"))
+    return render_template("signup.jinja2", form=form, template="form-template")
 
 
-@app.route('/success', methods=('GET', 'POST'))
+@app.route("/success", methods=("GET", "POST"))
 def success():
-    return render_template('success.jinja2',
-                           template='success-template')
+    return render_template("success.jinja2", template="success-template")
