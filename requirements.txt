@@ -7,6 +7,6 @@ idna==2.10
 itsdangerous==1.1.0
 jinja2==2.11.2
 markupsafe==1.1.1
-python-dotenv==0.14.0
+python-dotenv==0.15.0
 werkzeug==1.0.1
 wtforms==2.3.3
