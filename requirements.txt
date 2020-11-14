@@ -1,6 +1,6 @@
 click==7.1.2
 dnspython==2.0.0
-email-validator==1.1.1
+email-validator==1.1.2
 flask==1.1.2
 flask-wtf==0.14.3
 idna==2.10
