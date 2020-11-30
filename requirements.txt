@@ -1,12 +1,13 @@
-click==7.1.2; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
-dnspython==2.0.0; python_version >= "3.6"
+-i https://pypi.org/simple/
+click==7.1.2
+dnspython==2.0.0
 email-validator==1.1.2
 flask-wtf==0.14.3
-flask==1.1.2; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0")
-idna==2.10; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0"
-itsdangerous==1.1.0; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
-jinja2==2.11.2; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
-markupsafe==1.1.1; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
-python-dotenv==0.15.0
-werkzeug==1.0.1; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
+flask==1.1.2
+idna==2.10
+itsdangerous==1.1.0
+jinja2==2.11.2
+markupsafe==1.1.1
+python-dotenv==0.13.0
+werkzeug==1.0.1
 wtforms==2.3.3
