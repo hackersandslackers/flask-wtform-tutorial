@@ -1,5 +1,8 @@
 """Initialize app."""
+from ddtrace import patch_all
 from flask import Flask
+
+patch_all()
 
 
 def create_app():
