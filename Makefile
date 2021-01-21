@@ -8,11 +8,12 @@ make run        - Run $(PROJECTNAME).
 make deploy     - Install requirements and run app for the first time.
 make update     - Update pip dependencies via Python Poetry.
 make format     - Format code with Python's `Black` library.
+make lint       - Check code formatting with flake8
 make clean      - Remove cached files and lock files.
 endef
 export HELP
 
-.PHONY: run deploy update format clean help
+.PHONY: run deploy update format lint clean help
 
 
 requirements: .requirements.txt
@@ -56,3 +57,8 @@ clean:
 	find . -name '__pycache__' -delete
 	find . -name 'poetry.lock' -delete
 	find . -name 'Pipefile.lock' -delete
+	find . -name 'logs/*.json' -delete
+	find . -name '*.log' -delete
+	find . -name '*/.pytest_cache' -delete
+	find . -name '*/logs/*.json' -delete
+	rm -rf tests/.pytest_cache

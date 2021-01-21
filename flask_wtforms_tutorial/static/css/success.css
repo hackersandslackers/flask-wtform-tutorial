@@ -1,7 +1,7 @@
 .success-wrapper {
   background: white;
-  width: 300px;
-  padding: 30px;
+  width: 350px;
+  padding: 40px;
   text-align: center;
   margin: 50px auto 0;
   display: block;
@@ -14,4 +14,24 @@
 .success-wrapper p {
   text-align: center;
   color: #363a40;
+  line-height: 1.3;
+}
+
+button {
+  background: #5eb9d7;
+  color: white;
+  border-radius: 2px;
+  margin-top: 15px;
+  font-weight: 400;
+  border: 1px solid #5eb9d7;
+  line-height: 1;
+  transition: all .3s ease-out;
+  padding: 10px 15px;
+  font-size: 1.1em;
+}
+
+button:hover {
+  cursor: pointer;
+  background: white;
+  color: #5eb9d7;
 }

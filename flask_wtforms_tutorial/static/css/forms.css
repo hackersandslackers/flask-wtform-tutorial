@@ -5,6 +5,8 @@ form {
 
 .form-field {
   position: relative;
+  border: 0;
+  padding: 0;
 }
 
 .container {
@@ -22,11 +24,11 @@ form {
   margin: 0 0 40px 0;
 }
 
-.formwrapper {
+.form-wrapper {
   background: white;
   width: 350px;
   box-shadow: 0 0 5px rgba(65, 67, 144, 0.1);
-  padding: 50px;
+  padding: 40px;
 }
 
 label {
@@ -41,6 +43,7 @@ input, textarea, select {
   padding: 10px 13px;
   margin-bottom: 15px;
   width: -webkit-fill-available;
+  width: -moz-available;
   border-radius: 2px;
   border: 1px solid #d4d9e3;
   font-weight: 200;
@@ -86,18 +89,20 @@ textarea:focus {
   box-shadow: unset;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
   background: #5eb9d7;
-  border: 0;
   color: white;
   border-radius: 2px;
   margin-top: 15px;
   font-weight: 400;
   border: 1px solid #5eb9d7;
+  line-height: 1;
   transition: all .3s ease-out;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+button:hover {
   cursor: pointer;
   background: white;
   color: #5eb9d7;
@@ -112,7 +117,7 @@ input[type="submit"]:hover {
 
 .errors {
   list-style: none;
-  margin: 10px 0;
+  margin: 10px auto;
   position: absolute;
   z-index: 10;
   right: -222px;
@@ -126,7 +131,6 @@ input[type="submit"]:hover {
   width: 182px;
   text-align: center;
   height: fit-content;
-  margin: auto;
 }
 
 i {
@@ -135,8 +139,8 @@ i {
   top: 4px;
   bottom: 0;
   right: 16px;
-  height: fit-content;
   color: grey;
+  height: 15px;
 }
 
 .g-recaptcha div {
