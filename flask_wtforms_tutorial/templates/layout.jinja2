@@ -2,41 +2,63 @@
 
 <html lang="en">
 
-    <head>
-      <meta charset="utf-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-      <title>{{ title }}</title>
-      <meta name="HandheldFriendly" content="True"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-      <meta name="theme-color" content="#5eb9d7"/>
-      <link rel="shortcut icon" href="{{ url_for('static', filename='dist/img/favicon.png') }}" type="image/x-icon"/>
-      {% block styles %}{% endblock %}
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
-      <script src="https://kit.fontawesome.com/e3deaeba31.js" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,500" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>{{ title }} - Hackers and Slackers</title>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#5eb9d7" >
+    <link rel="canonical" href="https://flaskwtf.hackersandslackers.app/" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='dist/img/favicon.png') }}" type="image/x-icon"/>
 
-    <body class="{{ template }}">
+    {# OpenGraph #}
+    <meta property="og:site_name" content={{ title }} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={{ title }} />
+    <meta property="og:description" content={{ description }} />
+    <meta property="og:url" content="https://flaskwtf.hackersandslackers.app/" />
+    <meta property="og:image" content="/.github/flask-wtforms-tutorial@2x.jpg" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="523" />
 
-        <div class="container">
-          {% block content %}{% endblock %}
-        </div>
+    {# Twitter #}
+    <meta name="twitter:title" content={{ title }}/>
+    <meta name="twitter:description" content={{ description }}/>
+    <meta name="twitter:url" content="https://flaskwtf.hackersandslackers.app/" />
+    <meta name="twitter:site" content="https://twitter.com/hackersslackers" />
+    <meta name="twitter:creator" content="@toddrbirchard" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/.github/flask-wtforms-tutorial@2x.jpg" />
 
-        <script type="text/javascript">
-          var _gauges = _gauges || [];
-          (function() {
-            var t   = document.createElement('script');
-            t.type  = 'text/javascript';
-            t.async = true;
-            t.id    = 'gauges-tracker';
-            t.setAttribute('data-site-id', '5eb6bab25292fb79acffe181');
-            t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
-            t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(t, s);
-          })();
-        </script>
+    {# Styles #}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <script src="https://kit.fontawesome.com/e3deaeba31.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,500" rel="stylesheet">
+    {% block styles %}{% endblock %}
+</head>
 
-    </body>
+<body class="{{ template }}">
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function () {
+        var t = document.createElement('script');
+        t.type = 'text/javascript';
+        t.async = true;
+        t.id = 'gauges-tracker';
+        t.setAttribute('data-site-id', '5eb6bab25292fb79acffe181');
+        t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+        t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+    })();
+</script>
+
+</body>
 
 </html>

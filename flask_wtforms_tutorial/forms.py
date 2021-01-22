@@ -1,4 +1,4 @@
-"""Form class declaration."""
+"""Form object declaration."""
 from flask_wtf import FlaskForm, RecaptchaField
 from wtforms import (
     DateField,

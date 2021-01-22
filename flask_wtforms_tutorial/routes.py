@@ -1,3 +1,4 @@
+"""Routing."""
 from flask import current_app as app
 from flask import redirect, render_template, url_for
 
@@ -6,12 +7,17 @@ from .forms import ContactForm, SignupForm
 
 @app.route("/")
 def home():
-    return render_template("index.jinja2", template="home-template")
+    """Landing page."""
+    return render_template(
+        "index.jinja2",
+        template="home-template",
+        title="Flask-WTF tutorial"
+    )
 
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
-    """Standard `contact` form, typically used to send emails."""
+    """Standard `contact` form."""
     form = ContactForm()
     if form.validate_on_submit():
         return redirect(url_for("success"))
@@ -37,7 +43,7 @@ def signup():
 
 @app.route("/success", methods=["GET", "POST"])
 def success():
-    """Generic success page displayed when users submit a valid forms."""
+    """Generic success page upon form submission."""
     return render_template(
         "success.jinja2",
         template="success-template"

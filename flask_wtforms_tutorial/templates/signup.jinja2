@@ -22,7 +22,9 @@
             {% if form.email.errors %}
               <ul class="errors">
                 {% for error in form.email.errors %}
-                  <li>{{ error }}</li>
+                  <li class="error">
+                      <i class="fas fa-exclamation"></i> <span class="error-message">{{ error }}</span>
+                  </li>
                 {% endfor %}
               </ul>
             {% endif %}
@@ -31,8 +33,10 @@
           <fieldset class="form-field">{{ form.password.label }} {{ form.password }}
             {% if form.password.errors %}
               <ul class="errors">
-                {% for error in form.password.errors %}
-                  <li>{{ error }}</li>
+                {% for error in form.email.errors %}
+                  <li class="error">
+                      <i class="fas fa-exclamation"></i> <span class="error-message">{{ error }}</span>
+                  </li>
                 {% endfor %}
               </ul>
             {% endif %}
@@ -41,8 +45,10 @@
           <fieldset class="form-field">{{ form.confirmPassword.label }} {{ form.confirmPassword }}
             {% if form.confirmPassword.errors %}
               <ul class="errors">
-                {% for error in form.confirmPassword.errors %}
-                  <li>{{ error }}</li>
+                {% for error in form.email.errors %}
+                  <li class="error">
+                      <i class="fas fa-exclamation"></i> <span class="error-message">{{ error }}</span>
+                  </li>
                 {% endfor %}
               </ul>
             {% endif %}
@@ -52,8 +58,10 @@
             <i class="fas fa-caret-down"></i>
             {% if form.title.errors %}
               <ul class="errors">
-                {% for error in form.title.errors %}
-                  <li>{{ error }}</li>
+                {% for error in form.email.errors %}
+                  <li class="error">
+                      <i class="fas fa-exclamation"></i> <span class="error-message">{{ error }}</span>
+                  </li>
                 {% endfor %}
               </ul>
             {% endif %}
@@ -62,8 +70,10 @@
           <fieldset class="form-field">{{ form.website.label }} {{ form.website }}
             {% if form.website.errors %}
               <ul class="errors">
-                {% for error in form.website.errors %}
-                  <li>{{ error }}</li>
+                {% for error in form.email.errors %}
+                  <li class="error">
+                      <i class="fas fa-exclamation"></i> <span class="error-message">{{ error }}</span>
+                  </li>
                 {% endfor %}
               </ul>
             {% endif %}
@@ -72,8 +82,10 @@
           <fieldset class="form-field">{{ form.birthday.label }} {{ form.birthday }}
             {% if form.birthday.errors %}
               <ul class="errors">
-                {% for error in form.birthday.errors %}
-                  <li>{{ error }}</li>
+                {% for error in form.email.errors %}
+                  <li class="error">
+                      <i class="fas fa-exclamation"></i> <span class="error-message">{{ error }}</span>
+                  </li>
                 {% endfor %}
               </ul>
             {% endif %}

@@ -15,6 +15,12 @@ form {
   justify-content: space-around;
 }
 
+@media(max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+}
+
 .title {
   font-size: 1.7rem;
   color: #5f6988;
@@ -106,6 +112,7 @@ button:hover {
   cursor: pointer;
   background: white;
   color: #5eb9d7;
+  padding: 13px !important;
 }
 
 .success-wrapper {
@@ -116,31 +123,34 @@ button:hover {
 }
 
 .errors {
-  list-style: none;
-  margin: 10px auto;
-  position: absolute;
-  z-index: 10;
-  right: -222px;
-  top: 0;
-  bottom: 0;
-  background: #fae7ea;
-  padding: 9px 15px;
-  border-radius: 3px;
-  border: 1px solid #e1c5c5;
-  color: #8d7575;
-  width: 182px;
-  text-align: center;
-  height: fit-content;
+    list-style: none;
+    margin: -15px 0 20px;
+    font-size: .8em;
+    text-align: left;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    background: #fae7ea;
+    padding: 9px 15px;
+    border-radius: 0 0 3px 3px;
+    border-top: 0;
+    border: 1px solid #e1c5c5;
+    color: #8d7575;
+    height: fit-content;
+}
+
+.error {
+  margin-bottom: 5px;
+}
+
+.error:last-of-type {
+  margin-bottom: 0;
 }
 
 i {
-  position: absolute;
-  margin: auto;
-  top: 4px;
-  bottom: 0;
-  right: 16px;
-  color: grey;
   height: 15px;
+  color: #8d7575;
+  margin-right: 5px;
+  font-size: .9em;
 }
 
 .g-recaptcha div {
