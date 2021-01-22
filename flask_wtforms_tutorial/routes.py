@@ -24,7 +24,8 @@ def contact():
     return render_template(
         "contact.jinja2",
         form=form,
-        template="form-template"
+        template="form-template",
+        title="Contact Form"
     )
 
 
@@ -37,7 +38,8 @@ def signup():
     return render_template(
         "signup.jinja2",
         form=form,
-        template="form-template"
+        template="form-template",
+        title="Signup Form"
     )
 
 
