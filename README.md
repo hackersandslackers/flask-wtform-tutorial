@@ -10,12 +10,24 @@
 
 ![Flask-WTF Tutorial](https://github.com/hackersandslackers/flask-wtform-tutorial/blob/master/.github/flask-wtforms-tutorial@2x.jpg?raw=true)
 
-Source code for the accompanying tutorial found here: https://hackersandslackers.com/flask-wtforms-forms/
+**Tutorial**: https://hackersandslackers.com/flask-wtforms-forms/
+
+**Demo**: https://flaskwtf.hackersandslackers.app/
 
 
 # Getting Started
 
-Get set up locally in two steps:
+Get set up locally:
+
+### Installation
+
+Get up and running with `make deploy`:
+
+```shell
+$ git clone https://github.com/hackersandslackers/flask-wtform-tutorial.git
+$ cd flask-wtform-tutorial
+$ make deploy
+``` 
 
 ### Environment Variables
 
@@ -27,15 +39,6 @@ Replace the values in **.env.example** with your values and rename this file to 
 
 *Remember never to commit secrets saved in .env files to Github.*
 
-### Installation
-
-Get up and running with `make deploy`:
-
-```shell
-$ git clone https://github.com/hackersandslackers/flask-wtform-tutorial.git
-$ cd flask-wtform-tutorial
-$ make deploy
-``` 
 
 -----
 
