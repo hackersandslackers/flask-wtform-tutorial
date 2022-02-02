@@ -2,7 +2,7 @@ click==7.1.2; python_version >= "2.7" and python_full_version < "3.0.0" or pytho
 dnspython==2.1.0; python_version >= "3.6"
 email-validator==1.1.3
 flask-wtf==0.15.1
-flask==1.1.2; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0")
+flask==1.1.4; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0")
 idna==3.1; python_version >= "3.4"
 itsdangerous==1.1.0; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
 jinja2==2.11.3; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
