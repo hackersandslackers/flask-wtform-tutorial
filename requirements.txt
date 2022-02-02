@@ -8,6 +8,6 @@ itsdangerous==1.1.0; python_version >= "2.7" and python_full_version < "3.0.0" o
 jinja2==2.11.3; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
 markupsafe==1.1.1; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
 python-dotenv==0.17.1
-uwsgi==2.0.19.1
+uwsgi==2.0.20
 werkzeug==1.0.1; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0"
 wtforms==2.3.3
