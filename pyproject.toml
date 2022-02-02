@@ -23,7 +23,7 @@ flask = "*"
 flask-wtf = "*"
 python-dotenv = "*"
 email_validator = "*"
-uWSGI = "^2.0.19"
+uWSGI = "^2.0.20"
 
 [tool.poetry.dev-dependencies]
 lesscpy = "*"
