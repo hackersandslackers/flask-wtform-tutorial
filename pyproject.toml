@@ -23,15 +23,15 @@ flask = "*"
 flask-wtf = "*"
 python-dotenv = "*"
 email_validator = "*"
-uWSGI = "^2.0.19"
+uWSGI = "*"
 
 [tool.poetry.dev-dependencies]
 lesscpy = "*"
 cssmin = "*"
 jsmin = "*"
 pytest = "*"
-black = "^22.1"
-isort = "^5.10.1"
+black = "*"
+isort = "*"
 
 [tool.poetry.scripts]
 run = "wsgi:app"
