@@ -11,6 +11,6 @@ def create_app():
 
     with app.app_context():
         # Import parts of our flask_wtforms_tutorial
-        from . import routes
+        from flask_wtforms_tutorial import routes
 
         return app
