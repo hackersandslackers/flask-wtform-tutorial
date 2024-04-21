@@ -30,7 +30,7 @@ run = "wsgi:app"
 issues = "https://github.com/hackersandslackers/flask-wtform-tutorial/issues"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.5.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pylint.'MESSAGES CONTROL']

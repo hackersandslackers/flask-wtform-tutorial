@@ -18,12 +18,12 @@
 }
 
 button {
-  background: #5eb9d7;
+  background: #0297f6;
   color: white;
   border-radius: 2px;
   margin-top: 15px;
   font-weight: 400;
-  border: 1px solid #5eb9d7;
+  border: 1px solid #0297f6;
   line-height: 1;
   transition: all .3s ease-out;
   padding: 10px 15px;
@@ -33,5 +33,5 @@ button {
 button:hover {
   cursor: pointer;
   background: white;
-  color: #5eb9d7;
+  color: #0297f6;
 }

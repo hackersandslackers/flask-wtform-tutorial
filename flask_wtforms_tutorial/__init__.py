@@ -1,4 +1,5 @@
 """Initialize app."""
+
 from flask import Flask
 
 

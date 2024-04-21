@@ -18,6 +18,8 @@ form {
 @media(max-width: 500px) {
   .container {
     padding: 0;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -38,14 +40,16 @@ form {
 }
 
 label {
-  font-size: .9em;
+  font-family: 'Poppins', sans-serif;
   color: #5f6988;
   margin-bottom: 3px;
   display: block;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   padding: 10px 13px;
   margin-bottom: 15px;
   width: -webkit-fill-available;
@@ -83,7 +87,7 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover,
 select:hover {
-  border-color: #5eb9d7;
+  border-color: #0297f6;
   background: #d9f6ff;
 }
 
@@ -91,19 +95,19 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
   background: white;
-  border-color: #5eb9d7;
+  border-color: #0297f6;
   box-shadow: unset;
 }
 
 input[type="submit"],
 button {
-  background: #5eb9d7;
+  background: #0297f6;
   color: white;
   border-radius: 2px;
   margin-top: 15px;
   font-weight: 400;
-  border: 1px solid #5eb9d7;
-  line-height: 1;
+  padding: 10px 13px;
+  border: 1px solid #0297f6;
   transition: all .3s ease-out;
 }
 
@@ -111,8 +115,7 @@ input[type="submit"]:hover,
 button:hover {
   cursor: pointer;
   background: white;
-  color: #5eb9d7;
-  padding: 13px !important;
+  color: #0297f6;
 }
 
 .success-wrapper {
@@ -123,19 +126,19 @@ button:hover {
 }
 
 .errors {
-    list-style: none;
-    margin: -15px 0 20px;
-    font-size: .8em;
-    text-align: left;
-    width: -webkit-fill-available;
-    width: -moz-available;
-    background: #fae7ea;
-    padding: 9px 15px;
-    border-radius: 0 0 3px 3px;
-    border-top: 0;
-    border: 1px solid #e1c5c5;
-    color: #8d7575;
-    height: fit-content;
+  list-style: none;
+  margin: -15px 0 20px;
+  font-size: .8em;
+  text-align: left;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  background: #fae7ea;
+  padding: 9px 15px;
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  border: 1px solid #e1c5c5;
+  color: #8d7575;
+  height: fit-content;
 }
 
 .error {
