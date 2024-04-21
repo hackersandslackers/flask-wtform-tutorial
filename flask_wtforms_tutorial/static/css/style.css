@@ -18,3 +18,12 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.logo img {
+  width: 50px;
+  margin: auto;
+}

@@ -11,6 +11,9 @@
 {% block content %}
 
     <div class="form-wrapper">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo@2x.png') }}" alt="logo"/>
+    </div>
       <h2 class="title">Contact</h2>
       <form method="POST" action="{{ url_for('contact') }}">
         {{ form.csrf_token }}
